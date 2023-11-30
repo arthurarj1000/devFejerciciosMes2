@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="./Ejercicio6/style.css">
+    <link rel="icon" href="./Ejercicio6/descarga (1).jpeg" type="image/jpeg">
     <script src="./Ejercicio6/app.js"></script>
 </head>
 <body>
     <header>
-        <h1>Perfumes Latinos</h1>
+        <h1 id="titulo">Perfumes Latinos</h1>
     </header>
 
     <main>
-        <h3>Perfumes</h3>
-        <ol>
-            <li>Aqua:200 usd</li>
-            <li>Emoción:180 usd</li>
-            <li>Alegría:160 usd</li>
-            <li>Frescura:150 usd</li>
+        <h3 id="pequeTitulo">Perfumes</h3>
+        <ol id="perfumes">
+            <li>Aqua: 200 usd</li>
+            <li>Emoción: 180 usd</li>
+            <li>Alegría: 160 usd</li>
+            <li>Frescura: 150 usd</li>
         </ol>
 
-        <h2>Vendedores:</h2>
-        <p>Juana</p>
-        <ul>
+        <h2 id="tituloVendedores">Vendedores:</h2>
+        <p id="vendedores1">Juana</p>
+        <ul id="vendidos1">
             <li id="AquaJuana"><label>Aqua vendidos:</label></li> <input id="1" type="number" value="0">
             <li id="EmociónJuana"><label>Emoción vendidos:</label></li> <input id="2" type="number" value="0">
             <li id="AlegríaJuana"><label>Alegría vendidos:</label></li> <input id="3" type="number" value="0">
             <li id="FrescuraJuana"><label>Frescura vendidos:</label></li> <input id="4" type="number" value="0">
         </ul>
-        <input type="button" value="Resumen Juana" onclick="todoJuana()">
+        <input type="button" value="Resumen Juana" id="boton1" onclick="todoJuana()">
 
-        <p>Pedro</p>
-        <ul>
-            <li id="AquaPedro"><label>Aqua vendidos:</label></li> <input type="number" value="0">
-            <li id="EmociónPedro"><label>Emoción vendidos:</label></li> <input type="number" value="0">
-            <li id="AlegríaPedro"><label>Alegría vendidos:</label></li> <input type="number" value="0">
-            <li id="FrescuraPedro"><label>Frescura vendidos:</label></li> <input type="number" value="0">
+        <p id="vendedores2">Pedro</p>
+        <ul id="vendidos2">
+            <li id="AquaPedro"><label>Aqua vendidos:</label></li> <input id="5" type="number" value="0">
+            <li id="EmociónPedro"><label>Emoción vendidos:</label></li> <input id="6" type="number" value="0">
+            <li id="AlegríaPedro"><label>Alegría vendidos:</label></li> <input id="7" type="number" value="0">
+            <li id="FrescuraPedro"><label>Frescura vendidos:</label></li> <input id="8" type="number" value="0">
         </ul>
-        <input type="button" value="Resumen Pedro">
+        <input type="button" value="Resumen Pedro" id="boton2" onclick="todoPedro()">
+
     </main>
 
     <footer>
+        <input type="button" value="Mejor empleado"  id="mejorEmpleado" onclick="mejorEmpleado()">
     </footer>
 </body>
 </html>

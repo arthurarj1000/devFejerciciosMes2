@@ -1,0 +1,58 @@
+*{
+    margin: 10px;
+    background-color: rebeccapurple;
+}
+
+#titulo{
+    color: red;
+    margin-left: 542px;
+}
+
+#pequeTitulo{
+    color: aqua;
+    margin-left:640px ;
+}
+
+#perfumes{
+    color: aliceblue;
+    margin-left: 575px;
+}
+
+#tituloVendedores{
+    color: aqua;
+}
+
+#vendidos1{
+    color: aliceblue;
+}
+
+#vendidos2{
+    color: aliceblue;
+    margin-left: 1000px;
+    margin-top: 0px;
+}
+
+#vendedores1{
+    color: yellow;
+}
+
+#vendedores2{
+    color: yellow;
+    margin-left: 1000px;
+    margin-top: -395px;
+
+}
+
+#boton1{
+    color: orange;
+}
+
+#boton2{
+    color: orange;
+    margin-left: 1000px;
+}
+
+#mejorEmpleado{
+    color:rgb(255, 0, 162);
+    margin-left: 625px;
+}
