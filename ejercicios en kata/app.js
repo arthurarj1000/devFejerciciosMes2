@@ -67,3 +67,79 @@
 //}else{
 //    console.log(`El número ${number} no es divisible entre 3`)
 //}
+
+//Demostración en clase: Tarjetas de Crédito - hecho por el SENSEI Diego Lechuga
+//const salario = prompt("Dime el salario:");
+//const strikes = prompt("¿Cuántos strikes tiene?");
+
+//let numeroSalario = parseInt(salario);
+//let numeroStrikes = parseInt(strikes);
+
+//let tarjeta= null;
+//numeroSalario = numeroSalario - (numeroStrikes*5000);
+//console.log(numeroSalario);
+
+//if(numeroSalario <= 5000 && numeroSalario > 0){
+//    tarjeta="Silver";
+//}else if (numeroSalario > 5000 && numeroSalario <= 10000){
+//    tarjeta="Gold";
+//}else if (numeroSalario > 10000){
+//    tarjeta="Platinum";
+//}
+
+//if(tarjeta !== null){
+//    console.log(`Tu tarjeta es ${tarjeta}`);
+//}else{
+//    console.log(`Este usuario no puede tener una tarjeta`);
+//}
+
+//Demostración en clase: Tarjetas de Crédito - hecho por el SENSEI Yaxche Manrique
+//const salario = prompt('Dime el salario:');
+//const strikes = prompt('¿Cuántos strikes tiene?');
+
+//let numeroSalario = parseInt(salario);
+//let numeroStrikes = parseInt(strikes);
+
+//if(!numeroSalario){
+//    alert('Ingres un valor!');
+//}
+
+//let tarjeta= null;
+//numeroSalario = numeroSalario - (numeroStrikes*5000);
+//console.log(numeroSalario);
+
+//if(numeroSalario <= 5000 && numeroSalario > 0){
+//    tarjeta='Silver';
+//}else if (numeroSalario > 5000 && numeroSalario <= 10000){
+//    tarjeta='Gold';
+//}else if (numeroSalario > 10000){
+//    tarjeta='Platinum';
+//}
+
+//if(!tarjeta){
+//    console.log(tarjeta);
+//    console.log(!tarjeta);
+//    console.log(`Este usuario no puede tener una tarjeta`);
+//}else{
+//    console.log(`Tu tarjeta es ${tarjeta}`);
+//    console.log(!tarjeta);
+//}
+
+//SWITCH - CASE demostración en case SENSEI Yaxche Manrique
+const dia = 'miercoles';
+
+switch (expression){
+    case 'lunes':
+        console.log('Sumergime en la miseria');
+        break;
+        case 'martes':
+            console.log('Contemplar el abismo');
+            break;
+            case 'miercoles':
+                case 'jueves':
+                console.log('Solucionar el hambruna mundial!');
+                break;
+                default:
+                    console.log('Danza y ejercicio');
+}
+
