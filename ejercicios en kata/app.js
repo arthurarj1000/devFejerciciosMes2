@@ -126,20 +126,31 @@
 //}
 
 //SWITCH - CASE demostración en case SENSEI Yaxche Manrique
-const dia = 'miercoles';
+//const dia = 'miercoles';
 
-switch (expression){
-    case 'lunes':
-        console.log('Sumergime en la miseria');
-        break;
-        case 'martes':
-            console.log('Contemplar el abismo');
-            break;
-            case 'miercoles':
-                case 'jueves':
-                console.log('Solucionar el hambruna mundial!');
-                break;
-                default:
-                    console.log('Danza y ejercicio');
-}
+//switch (expression){
+//    case 'lunes':
+//        console.log('Sumergime en la miseria');
+//        break;
+//        case 'martes':
+//            console.log('Contemplar el abismo');
+//            break;
+//            case 'miercoles':
+//                case 'jueves':
+//                console.log('Solucionar el hambruna mundial!');
+//                break;
+//                default:
+//                    console.log('Danza y ejercicio');
+//}
 
+//Operador Ternario | Operador Condicional ejemplos SENSEI Diego Lechuga
+
+//EJEMPLO en clase 1:
+//let ine=false;
+//let ineTernary=ine ? 'Si tengo Ine' : 'No tengo Ine :(';
+//console.log(ineTernary);
+
+//EJEMPLO en clase 2:
+//let mexicoPopulation = 23;
+//let message = mexicoPopulation>= 33? 'encima' : 'debajo';
+//console.log(`México tiene una población por ${message} del promedio`);
