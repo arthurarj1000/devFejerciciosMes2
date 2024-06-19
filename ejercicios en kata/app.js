@@ -154,3 +154,152 @@
 //let mexicoPopulation = 23;
 //let message = mexicoPopulation>= 33? 'encima' : 'debajo';
 //console.log(`México tiene una población por ${message} del promedio`);
+
+//ARRAYS
+
+//Ejemplo ARRAY sensei Diego Lechuga
+//let verduras = ['jitomate', 'cebolla', 'zanahoria', 'limón'];
+//console.log(verduras[0]);
+
+//Métodos de los ARRAYS 
+
+//Ejemplo length sensei Diego Lechuga
+//let frutas = ['Pera', 'Manzana', 'Plátano', 'Naranja']; 
+//frutas.length;
+
+//Ejemplo indexOf sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//indexOfJoey = friends.indexOf('Joey');
+//console.log(indexOfJoey); da 2 porque en esa posición se encuentra Joey
+
+//indexOfRichard = friends.indexOf('Richard');
+//console.log(indexOfRichard); da -1 porque no se encuentra a ningún Richard existente
+
+//Ejemplo toLowerCase sensei Diego Lechuga
+//let verduras = ['jitomate', 'cebolla', 'zanahoria', 'LIMÓN'];
+//verduras [3] = verduras[3].toLowerCase(); Aquí estamos poniendo en minúsculas el dato en la posición 3 y volviendo a almacenarla en posición 3 del ARRAY
+//console.log(verduras); da como output 'limón'
+
+//Ejemplo toUpperCase sensei Diego Lechuga
+//let verduras = ['jitomate', 'cebolla', 'zanahoria', 'limón'];
+//verduras [3] = verduras[3].toUpperCase(); Aquí estamos poniendo en mayúsculas el dato en la posición 3 y volviendo a almacenarla en posición 3 del ARRAY
+//console.log(verduras); da como output 'LIMÓN'
+
+//Ejemplo includes sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//let includesJoey = friends.includes('Joey');
+//console.log(includesJoey); da true porque sí existe Joey dentro del ARRAY
+
+//let includesRichard = friends.includes('Richard');
+//console.log(includesRichard); da false porque no existe ningún Richard dentro del ARRAY
+
+//Ejemplo push sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//friends.push('Gunther');
+//console.log(friends); aqui se agregaría a Gunther al final del array
+
+//Ejemplo unshift sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//friends.unshift('Gunther');
+//console.log(friends); aqui se agregaría a Gunther al inicio del array
+
+//Ejemplo pop sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//friends.pop();  aquí se elimina a Ross ya que se está al final del array
+//console.log(friends);
+
+//Ejemplo unshift sensei Diego Lechuga
+//const friends = ['Rachel', 'Monica', 'Joey', 'Chandler', 'Phoebe', 'Ross'];
+//friends.shift();  aquí se elimina a Rachel ya que se está al inicio del array
+//console.log(friends);
+
+//Ejemplo split sensei Diego Lechuga
+//let verduras = 'Cebolla, Perejil, Tomate, Calabaza';
+//let arregloVerduras = verduras.split(','); aquí se divide la cadena de texto “string” en un arreglo, esto cada vez que encuentre el carácter indicado que en este caso sería la coma “,”. El arreglo formado se tiene que guardar dentro de una variable.
+//console.log(arregloVerduras);
+
+//Ejemplo slice sensei Diego Lechuga
+//let nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanessa'];
+//let masculinos = nombres.slice(1,3); aquí se elige que parte se quiere guardar que en este caso Pedro y Miguel, y lo demás se elimina y el nuevo ARRAY se guarda en una variable.
+//console.log(masculinos);
+
+//Ejemplo splice para agregar y no quitar nada de elementos sensei Diego Lechuga
+//let frutas = ['pera', 'manzana', 'plátano', 'uvas', 'mandarina'];
+//let newFrutas = frutas.splice(2, 0, 'limón', 'sandía'); aquí estamos agregando los nuevos strings apartir de index 2 del ARRAY. El nuevo ARRAY se guarda en una variable.
+//console.log(newFrutas);
+
+//Ejemplo splice para agregar y quitar elementos sensei Diego Lechuga
+//let frutas = ['pera', 'manzana', 'plátano', 'uvas', 'mandarina'];
+//let newFrutas = frutas.splice(2, 1, 'limón', 'sandía'); aquí estamos diciendo que apartir del índice 2 del ARRAY vamos a quitar uno, y vamos a poner limón y sandía. El nuevo ARRAY se guarda en una variable.
+//console.log(newFrutas);
+
+//Ejemplo reverse sensei Diego Lechuga
+//const letters = ['b', 'P', 'd', 'a'];
+//let newLetters = letters.reverse(); aquí ponemos el arreglo al reves y el nuevo arreglo se guarda en una variable
+//console.log(newLetters);
+
+//Ejemplo concat sensei Diego Lechuga
+//const letters1 = ['a', 'e', 'i'];
+//const letters2 = ['o', 'u'];
+//const letters3 = [1, 2];
+
+//const lettersConcat = letters1.concat(letters2, letters3); (aquí se juntan los arreglos seleccionados a letters1 haciéndolos uno mismo. El nuevo ARRAY se guarda en una variable.)
+
+//console.log(lettersConcat);
+
+//Ejemplo sort sensei Diego Lechuga
+//let letters=['b', 'p', 'd', 'a', 'ñ', 'y', 'z'];
+//let sortedLetters = letters.sort(); aquí lo ordena como lo indica el reglamento UTF-16. Este array nuevo se guarda en una variable.
+//console.log(sortedLetters);
+
+//let letters=['b', 'P', 'd', 'A', 'ñ', 'z', 'w'];
+//let sortedLetters = letters.sort(); aquí lo ordena como lo indica el reglamento UTF-16. Este array nuevo se guarda en una variable.
+//console.log(sortedLetters);
+
+//OBJETOS LITERALES
+
+//Ejemplo Objetos Literales sensei Diego Lechuga
+//const arturo = {
+//    firstName: 'Arturo',
+//    lastname: 'Pollo',
+//    age: 2024-2004,
+//    job: 'chiwos',
+//    hasIne: true,
+//    friends: ['Pepe', 'Popo', 'Pipi', 'Pupu']
+//}
+
+//Ejemplo Operador punto sensei Diego Lechuga
+//const arturo = {
+//    firstName: 'Arturo',
+//    lastname: 'Pollo',
+//    age: 2024-2004,
+//    job: 'chiwos',
+//    hasIne: true,
+//    friends: ['Pepe', 'Popo', 'Pipi', 'Pupu']
+//}
+//console.log(arturo.firstName);
+
+
+//Ejemplo Operador corchetes sensei Diego Lechuga
+//const arturo = {
+//    firstName: 'Arturo',
+//    lastname: 'Pollo',
+//    age: 2024-2004,
+//    job: 'chiwos',
+//    hasIne: true,
+//    friends: ['Pepe', 'Popo', 'Pipi', 'Pupu']
+//}
+//let nombrePersona= "firstName";
+//console.log(arturo[nombrePersona]);
+
+//Ejemplo de como crear una nueva propiedad sensei Diego Lechuga
+//const arturo = {
+//    firstName: 'Arturo',
+//    lastname: 'Pollo',
+//    age: 2024-2004,
+//    job: 'chiwos',
+//    hasIne: true,
+//   friends: ['Pepe', 'Popo', 'Pipi', 'Pupu']
+//}
+//arturo.gay=false;
+//console.log(arturo);
