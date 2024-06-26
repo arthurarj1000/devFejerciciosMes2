@@ -303,3 +303,101 @@
 //}
 //arturo.gay=false;
 //console.log(arturo);
+
+//FUNCIONES
+
+//Ejemplo de como crear una funcion sensei Yaxche Manrique
+//  function nombreDeLaFunción(parametros) {
+//	Acciones a realizar
+//}
+
+//Ejemplo de Function Declaration sensei Yaxche Manrique
+//function square(number){
+//	return number * number;
+//}
+
+//Ejemplo de Funciones anónimas sensei Yaxche Manrique
+//const square = function (number){
+//	return number * number;
+//}
+
+//Ejemplo de como invocar/ejecutar la función sensei Yaxche Manrique
+//function square (number) {  cuando yo defino mi función son “parámetros”.
+//	return number * number;
+//}	
+//square(8);  cuando le estoy pasando elementos a la función son “argumentos”.
+
+//Demonstración en KATA: ¿Cuántos años te faltan para el retiro? sensei Yaxche Manrique
+//const RETIREMENT_AGE = 65;
+
+//function calcYearsRetirement(age){
+//    return RETIREMENT_AGE - age;
+//}
+
+//const user={
+//    name: 'Arturo',
+//    age: 19,
+//    hasAfore: false,
+//}
+
+//user.yearsForRetirement= calcYearsRetirement(user.age);
+
+//console.log(user);
+
+//Demonstración en KATA: ¿Cuántos años te faltan para el retiro? ahora utilizando FUNCEPTION sensei Yaxche Manrique
+//const RETIREMENT_AGE = 65;
+//const CURRENT_YEAR= 2024;
+
+//function calcAge(birthYear){
+//    return CURRENT_YEAR - birthYear;
+//}
+
+//function calcYearsRetirement(birthYear){
+//    const age= calcAge(birthYear);
+//    return RETIREMENT_AGE - age;
+//}
+
+//const user={
+//    name: 'Arturo',
+//    birthYear: 2004,
+//    hasAfore: false,
+//}
+
+//user.yearsForRetirement= calcYearsRetirement(user.birthYear);
+
+//console.log(user);
+
+//SCOPE (Alcance)
+
+//SCOPE GLOBAL sensei Yaxche Manrique
+
+//const firstName = 'Arturo';
+//const job= 'Gamer';
+//const year= '2004';
+
+//SCOPE DE FUNCIÓN sensei Yaxche Manrique
+//function ageCalculator(birthYear){
+//    const now= 2023;
+//    const age= now - birthYear;
+//    return age;
+//}
+
+//SCOPE DE BLOQUE (ES06) sensei Yaxche Manrique
+//if (year>= 1981 && year <= 1986){
+//    const millenial = true;
+//    const food = 'Aguacate';
+//}
+
+//MÉTODOS
+
+//Sintaxis de método sensei Diego Lechuga
+const objetoA={
+    key1: 'valor 1',
+    key2: 'valor 2',
+    key3: 'valor 3',
+
+    metodo: function (parametro){
+        //Body de la función
+        return;
+    }
+}
