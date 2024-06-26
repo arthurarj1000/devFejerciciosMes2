@@ -391,13 +391,34 @@
 //MÉTODOS
 
 //Sintaxis de método sensei Diego Lechuga
-const objetoA={
-    key1: 'valor 1',
-    key2: 'valor 2',
-    key3: 'valor 3',
+//const objetoA={
+//    key1: 'valor 1',
+//    key2: 'valor 2',
+//    key3: 'valor 3',
 
-    metodo: function (parametro){
-        //Body de la función
-        return;
-    }
-}
+//   metodo: function (parametro){
+//        //Body de la función
+//        return;
+//    }
+//}
+
+//Ejemplo de hacer MÉTODO sensei Diego Lechuga
+//let arturo={
+//    nombre:'Arturo',
+//    apellido:'Arj',
+//    edad:2024-2004,
+//    metodo: function tomarAgua(){
+//        console.log(`${arturo.nombre} y ${mariana.nombre} estan tomando agua`);
+//    }
+//}
+
+//let mariana={
+//    nombre:'Mariana',
+//}
+//console.log(arturo);
+
+//Ejemplo de como llamar al MÉTODO sensei Diego Lechuga
+//objetoA.metodo(parametro);
+
+//CICLO FOR
+
