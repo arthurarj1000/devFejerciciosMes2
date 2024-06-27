@@ -422,3 +422,72 @@
 
 //CICLO FOR
 
+//Ejemplo de como hacer un CICLO FOR sensei Diego Lechuga
+//for(let i = 0;  i<=10; i++){
+//    console.log(i);
+//}
+
+//Ejemplo de de como visualizar cada contenido con un Ciclo for en un ‘array’ sensei Diego Lechuga
+//const frutas = ['Manzana', 'Pera', 'Naranja', 'Uva'];
+
+//for(let i=0; i<frutas.length; i++){
+//    console.log(frutas[i]);
+//}
+
+//Otro ejemplo de clase de ver cada contenido de los 'arrays' con un CICLO FOR sensei Diego Lechuga
+//const frutas = ['Manzana', 'Pera', 'Naranja', 'Uva'];
+
+//frutas.forEach(fruta =>{ aquí estamos utilizando la 'función flecha' => 'arrow fuction' que equivale a un return
+//    console.log(fruta);
+//});
+
+//Ejemplo de clase de ver cada contenido de los 'Objetos literales' con un CICLO FOR sensei Diego Lechuga
+//let arturo={
+//    nombre:'Arturo',
+//    apellido:'Arj',
+//    edad:2024-2004,
+//    metodo: function tomarAgua(){
+//        console.log(`${arturo.nombre} y ${mariana.nombre} estan tomando agua`);
+//    }
+//}
+
+//const atributos = Object.values(arturo);
+
+//for(let i=0;i<atributos.length;i++){
+//    console.log(atributos[i]);
+//}
+
+//Ejemplo de clase utilizando otro método para ver cada llave contenido de los 'Objetos literales' con un CICLO FOR sensei Diego Lechuga
+//let arturo={
+//    nombre:'Arturo',
+//    apellido:'Arj',
+//    edad:2024-2004,
+//    metodo: function tomarAgua(){
+//        console.log(`${arturo.nombre} y ${mariana.nombre} estan tomando agua`);
+//    }
+//}
+
+//const atributos = Object.keys(arturo);
+
+//for(let i=0;i<atributos.length;i++){
+//    console.log(atributos[i]);
+//}
+
+//Ejemplo de “Contador” con CICLO FOR sensei Diego Lechuga
+//let contador= 0;
+
+//for (let i=1; i<=10; i++){
+//    if (i%2 === 0){
+//        contador = contador + 1;
+//        console.log(`${i} es mútiplo de 2`);
+//    }
+//}
+//console.log(`De 0 a 10 existe ${contador} múltiplos de 2`);
+
+//Ejemplo de “Acumulador” con CICLO FOR sensei Diego Lechuga
+//let acumulador = 0;
+//for(let i=0; i<=4; i++){
+//    acumulador = acumulador + i;
+//    console.log(acumulador);
+//}
+
