@@ -491,3 +491,91 @@
 //    console.log(acumulador);
 //}
 
+//CICLO WHILE
+
+//Ejemplo de la sintaxis del Ciclo While sensei Yaxche Manrique
+//while (condición) {
+	//código a ejecutar
+//}
+
+//Demostración en clase: Ciclo While sensei Yaxche Manrique
+//let dato = prompt('dame un dato');
+
+//while (dato != 'esc'){
+//    console.log(dato);
+//    dato = prompt('dame un dato');
+//}
+
+//Ejercicio en clase: La tabla de multiplicar del 12 (del 1 al 10) con Ciclo While
+//let i=1;
+
+//while(i <= 10){
+//    console.log(`${i} * 12 = ${i * 12}`);
+//    i++;
+//}
+
+//CICLO DO WHILE
+
+//Ejemplo de la sintaxis del Ciclo Do While sensei Yaxche Manrique
+//do{
+//    //código a ejecutar
+//}
+//while(condicion);
+
+//Demostración en clase: Ciclo do while sensei Yaxche Manrique
+//let numero = null;
+
+//do{
+//    numero = prompt('Dame un número del 1 al 10');
+//    console.log(numero);
+//}while (numero > 10 || numero < 1)
+//    console.log(`Super! ${numero} sí esta entre el 1 y 10!`);
+
+//CONTINUE Y BREAK
+
+//Ejemplo de utilizar CONTINUE sensei Yaxche Manrique
+//const array1 = [1,2,3,4,5];
+
+//for (let i = 0; i < array1.length; i++){
+//    if(array1[i] === 3){
+//        continue;
+//    }
+//    console.log(array1[i]);
+//}
+//-> 1, 2, 3, 4, 5
+
+//Demostración en clase: CONTINUE sensei Yaxche Manrique
+//const array = [0, 1, 2, 3, 4, 5, 6];
+//console.log(array);
+
+//for (let i = 0; i < array.length; i++){
+//    if(i === 3){
+//        continue;
+//    }
+//    console.log(i);
+//}
+
+
+//Ejemplo de utilizar BREAK sensei Yaxche Manrique
+//const array1 = [1,2,3,4,5];
+
+//for (let i = 0; i < array1.length; i++){
+//    if(array1[i] === 3){
+//        break;
+//    }
+//    console.log(array1[i]);
+//}
+//-> 1, 2, 3
+
+//Demostración en clase: BREAK sensei Yaxche Manrique
+//const array = [0, 1, 2, 3, 4, 5, 6];
+//console.log(array);
+
+//for (let i = 0; i < array.length; i++){
+//    if(i === 3){
+//        break;
+//    }
+//    console.log(i);
+//}
+//console.log('Fin!');
+
