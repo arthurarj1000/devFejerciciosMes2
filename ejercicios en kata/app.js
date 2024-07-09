@@ -579,3 +579,25 @@
 //}
 //console.log('Fin!');
 
+//DOM
+
+//Ejemplo DOM sensei Yaxche Manrique
+const header = document.createElement('h1'); //creamos un elemento, guardandola en un variable.
+header.textContent = 'Este es un h1'; //le agregamos contenido.
+
+//const body = document.querySelector('body') seleccionamos nuestro body para agregar lo que queremos, guardandola en una variable.
+//body.appendChild(header); a nuestro body le agregamos nuestro header.
+
+//const body = document.getElementsByTagName('body'); Ejemplo con TagName
+//body[0].appendChild(header);
+
+//const body = document.getElementsById('body'); Ejemplo con ById
+//body.appendChild(header);
+
+//header.style.backgroundColor = 'steelblue'; Modificar color del elemento sin utilizar CSS
+//header.style.fontSize = '5rem'; Modificar tamañano de letra del elemento sin utilizar CSS
+
+const parrafos = document.getElementsByTagName('p');
+for(let i= 0; i< parrafos.length; i++){
+    parrafos[i].style.color = 'blue'; //Cambiar el color de todos los parrafos, utilizando un ciclo FOR para acceder a cada índice de ese arreglo de párrafos.
+}
