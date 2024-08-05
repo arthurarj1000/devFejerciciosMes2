@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./ejercicios en kata/style.css">
-    <title>Ejercicios en clase MES 2 y Ejemplo DOM</title>
+    <title>intro TO DO LIST dom</title>
     <script src="./ejercicios en kata/app.js" defer></script>
 </head>
-<body id="body">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui unde aliquid voluptatibus magnam! Minima accusamus dolorum a iure, nihil laboriosam ut dolore consequatur eaque veritatis! Expedita praesentium ipsam quas!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias maxime ea, possimus doloremque quas explicabo, ab minus quod cupiditate quos facere illum placeat saepe corrupti odio asperiores sit. Laudantium.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias maxime ea, possimus doloremque quas explicabo, ab minus quod cupiditate quos facere illum placeat saepe corrupti odio asperiores sit. Laudantium.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias maxime ea, possimus doloremque quas explicabo, ab minus quod cupiditate quos facere illum placeat saepe corrupti odio asperiores sit. Laudantium.</p>
-    <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-        <li>item4</li>
-        <li>item5</li>
-    </ul>
-    <a href="#">Lorem</a>
-    <a href="#">Lorem2</a>
-    <a href="#">Lorem3</a>
-    <a href="#">Lorem4</a>
+<body>
+    <div class="container">
+        <nav>
+            <img src="#" alt="LogoIpsum">
+            <ul>
+                <li><a href="#">ToDo List</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
+        <header>
+            <input type="text" id="task-content">
+            <button id="add-button">Add</button>
+        </header>
+        <main>
+            <section id="inbox">
+                <h2>Inbox</h2>
+            </section>
+            <section id="active">
+                <h2>Active</h2>
+            </section>
+            <section id="pending">
+                <h2>Pending</h2>
+            </section>
+            <section id="closed">
+                <h2>Closed</h2>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

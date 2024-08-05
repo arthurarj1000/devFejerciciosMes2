@@ -581,9 +581,9 @@
 
 //DOM
 
-//Ejemplo DOM sensei Yaxche Manrique
-const header = document.createElement('h1'); //creamos un elemento, guardandola en un variable.
-header.textContent = 'Este es un h1'; //le agregamos contenido.
+//Ejemplo intro a DOM sensei Yaxche Manrique
+//const header = document.createElement('h1'); //creamos un elemento, guardandola en un variable.
+//header.textContent = 'Este es un h1'; //le agregamos contenido.
 
 //const body = document.querySelector('body') seleccionamos nuestro body para agregar lo que queremos, guardandola en una variable.
 //body.appendChild(header); a nuestro body le agregamos nuestro header.
@@ -597,7 +597,50 @@ header.textContent = 'Este es un h1'; //le agregamos contenido.
 //header.style.backgroundColor = 'steelblue'; Modificar color del elemento sin utilizar CSS
 //header.style.fontSize = '5rem'; Modificar tamañano de letra del elemento sin utilizar CSS
 
-const parrafos = document.getElementsByTagName('p');
-for(let i= 0; i< parrafos.length; i++){
-    parrafos[i].style.color = 'blue'; //Cambiar el color de todos los parrafos, utilizando un ciclo FOR para acceder a cada índice de ese arreglo de párrafos.
+//const parrafos = document.getElementsByTagName('p');
+//for(let i= 0; i< parrafos.length; i++){
+//    parrafos[i].style.color = 'blue'; //Cambiar el color de todos los parrafos, utilizando un ciclo FOR para acceder a cada índice de ese arreglo de párrafos.
+//}
+
+//parrafos [0].style.opacity = 0; forma de ocultar elementos
+//parrafos [0].style.display='none'; otra forma de ocultar elementos
+//ReportBody.removeChild(parrafos[0]); otra forma de ocultar elementos
+
+//const ankers = document.getElementsByClassName('fondo');
+//ankers[2].classList.remove('fondo');
+
+//const button= document.querySelector('button'); variable para seleccionar del DOM el elemento botón
+
+//button.addEventListener('click', Function sayHello()){ cuando hagamos click en el botón se realzara la función
+//    alert('Hello!');
+//}
+
+//Ejemplo TO DO LIST a DOM sensei Yaxche Manrique
+
+const input = document.getElementById('task-content'); //variable para identificar el INPUT text box del DOM
+const addButton = document.getElementById('add-button');//variable para identificar el BOTÓN  del DOM
+const inboxSection = document.querySelector('#inbox');//variable para identificar el INBOX del DOM
+
+function addToInbox(){
+    const taskContent = input.value; //obtenemos los valores que se pusieron en el INPUT text box
+    if(taskContent !== ''){ //condición para que solo se admitan text box con valores y no vacíos
+        const task = document.createElement('p'); //creamos lugares para poder poner los valores del INPUT
+        //task.textContent = taskContent; el texto de los lugares que creamos será igual al los valores del INPUT
+        task.innerHTML = `<span>${taskContent}</span> <button class="delete-button">x</button>`;
+        inboxSection.appendChild(task); //hacemos que se nazcan y se pongan en la inboxSection
+        input.value=''; //que se borre lo del INPUT text box una vez que le demos click al botón
+
+        let deleteButton = document.querySelector('.delete-button');
+        deleteButton[i].addEventListener('click', deleteTask);
+        function deleteTask(event){
+            const span=event.target.parentNode;
+            span.style.display = 'none';
+            console.log(event.target);
+        }
+    }else{
+        alert('Ingresa una tarea válida'); //todo lo demás esto
+    }
+
 }
+
+addButton.addEventListener('click', addToInbox);//que se realice la funcion cuando le demos click al botón
