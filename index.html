@@ -3,36 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>intro TO DO LIST dom</title>
-    <script src="./ejercicios en kata/app.js" defer></script>
+    <!-- Primero link css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Segundo link de nuestros estilos propios-->
+    <link rel="stylesheet" href="./ejercicios en kata/Ejemplo de utilizar Bootstrap/style.css">
+    <title>Número secreto</title>
+    <!-- Tercer Script Bootstrap-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Cuarto nuestro script-->
+    <script defer src="./ejercicios en kata/Ejemplo de utilizar Bootstrap/app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <img src="#" alt="LogoIpsum">
-            <ul>
-                <li><a href="#">ToDo List</a></li>
-                <li><a href="#">Perfil</a></li>
-            </ul>
-        </nav>
-        <header>
-            <input type="text" id="task-content">
-            <button id="add-button">Add</button>
-        </header>
-        <main>
-            <section id="inbox">
-                <h2>Inbox</h2>
-            </section>
-            <section id="active">
-                <h2>Active</h2>
-            </section>
-            <section id="pending">
-                <h2>Pending</h2>
-            </section>
-            <section id="closed">
-                <h2>Closed</h2>
-            </section>
-        </main>
-    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Cómo jugar?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ol>
+                    <li>Adivina el número detrás del signo de interrogación.</li>
+                    <li>Presiona el bo´ton de <strong>Revisar!</strong> para ver si adivinaste! </li>
+                    <li><em>Hint:</em>Todos los número se encuentran entre el 1 y 20.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">
+          Adivina el número secreto
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Número secreto</h5>
+          <p class="card-text" id="secret-number">?</p>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="?">
+            <label for="floatingInput">Tu respuesta</label>
+          </div>
+          <a href="#" id="check-button" class="btn btn-primary">Revisar!</a>
+        </div>
+      </div>
+      <div class="alert alert-primary" role="alert" id="hint">
+        Empieza a adivinar...
+      </div>
+      <div class="alert alert-primary" role="alert">
+        Score: <strong id="score"></strong>
+      </div>
 </body>
 </html>
